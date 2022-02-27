@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="radio" value="radioButtonYes" id="radioButtonYes" name="radioButton" required/><label for="">&nbsp;Yes</label>&nbsp;&nbsp;<input type="radio" value="radioButtonNo" id="radioButtonNo" name="radioButton" required/>&nbsp;<label for="">&nbsp;No</label>
+]]></content>
+	<tabTrigger>radioButtonPair</tabTrigger>
+</snippet>

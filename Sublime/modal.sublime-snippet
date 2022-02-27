@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+<button data-target="#modalId" data-toggle="modal">Button</button>
+<div class="modal fade" id="modalId" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content card border-warning">
+        <div class="modal-header card-header" align="center">Modal Heading<button type="button" class="close btn btn-danger" data-dismiss="modal">&times;</button><h4 class="modal-title"></h4></div>
+        <div class="modal-body" align="center">
+          <div class="row">
+              <div class="col-lg-12">
+                <div class="card border-dark">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+]]></content>
+	<tabTrigger>modal</tabTrigger>
+</snippet>

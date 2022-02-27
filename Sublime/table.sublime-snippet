@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<table class="table table-borderd">
+<thead><tr><th class="text-center">Cell</th><th class="text-center">Cell</th></tr></thead>
+<tbody><tr><td align="center">Cell</td><td align="center">Cell</td></tr></tbody>
+<tfoot><tr><td align="center">Cell</td><td align="center">Cell</td></tr></tfoot>
+</table>
+]]></content>
+	<tabTrigger>table</tabTrigger>
+</snippet>

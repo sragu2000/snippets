@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+        var innerThis=this;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        var data=JSON.parse(xhttp.responseText);
+        data.forEach(function(item){
+        innerThis.headings.push({"headingid":item.headingid,"headingtext":item.headingText});
+        innerThis.questionText=item.questionText;
+        });
+        }
+        };
+        xhttp.open("GET", "<?php echo base_url('index.php/heading/getHeadingsForQuestion?questionID='.$_GET['questionID']); ?>", true);
+        xhttp.send();
+        ]]>
+    </content>
+    <tabTrigger>xmlGet</tabTrigger>
+</snippet>

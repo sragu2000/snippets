@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<input type="file" class="form-control" id="fileUpload" name="fileUpload" required/>
+]]></content>
+	<tabTrigger>fileInput</tabTrigger>
+</snippet>

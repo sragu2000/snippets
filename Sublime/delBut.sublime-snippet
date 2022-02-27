@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<button class="btn bg-danger text-white">Delete</button>
+        ]]>
+    </content>
+    <tabTrigger>delBut</tabTrigger>
+</snippet>

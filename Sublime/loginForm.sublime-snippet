@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+<div class="card border-dark">
+<form method="POST" action="" id="loginFormID">
+<div class="card-header bg-dark text-white" align="center">Login Here</div>
+	<div class="card-body">
+		<div class="row" style="margin:1%"><div class="col-lg-6">Username</div><div class="col-lg-6"><input type="text" class="form-control" id="username" name="username" required/></div></div>
+		<div class="row" style="margin:1%"><div class="col-lg-6">Password</div><div class="col-lg-6"><input type="password" class="form-control" id="password" name="password" required/></div></div>
+	</div>
+	<div class="card-footer bg-dark text-white">
+		<div class="row">
+			<div class="col-lg-6" align="center"><button type="submit" id="submitButton" class="btn btn-light border-dark">Login</button></div>
+			<div class="col-lg-6" align="center"><button type="reset" id="submitButton" class="btn btn-light border-dark">Reset</button></div>
+		</div>
+	</div>
+</form>
+</div>
+]]></content>
+	<tabTrigger>loginForm</tabTrigger>
+</snippet>

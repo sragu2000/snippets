@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="date" class="form-control" id="date" name="date" placeholder="date" required/>
+]]></content>
+	<tabTrigger>dateInput</tabTrigger>
+</snippet>

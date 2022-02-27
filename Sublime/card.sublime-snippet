@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<div class="card border-dark">
+<div class="card-header" align="center">Heading</div>
+	<div class="card-body">
+
+	</div>
+	<div class="card-footer">
+	</div>
+</div>
+]]></content>
+	<tabTrigger>card</tabTrigger>
+</snippet>

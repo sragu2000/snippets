@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+<button class="btn btn-dark btn-md border-dark text-white" id="myButton">myButton</button>
+<script type="text/javascript">
+$(document).on("click","#myButton",function(){
+	
+});
+</script>
+]]></content>
+	<tabTrigger>button</tabTrigger>
+</snippet>

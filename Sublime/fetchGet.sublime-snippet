@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+fetch("URL",{
+          method:'GET',
+          mode: 'no-cors',
+          cache: 'no-cache'})
+        .then(response => {
+          if (response.status == 200) {
+            return response.json();            
+          }
+          else {
+            alert('Backend Error..!');
+            console.log(response.text());
+          }
+        })
+        .then(data => {
+          alert(data.message);
+        })
+        .catch(() => {
+          console.log("Network connection error");
+          alert("Reloading");
+        });
+
+]]></content>
+	<tabTrigger>fetchGet</tabTrigger>
+</snippet>

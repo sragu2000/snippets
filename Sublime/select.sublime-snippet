@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<select class="form-control" id="select" name="select">
+	<option value="">Select</option>
+</select>
+]]></content>
+	<tabTrigger>select</tabTrigger>
+</snippet>

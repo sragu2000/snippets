@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="number" class="form-control" id="number" name="number" placeholder="number" required/>
+]]></content>
+	<tabTrigger>numberInput</tabTrigger>
+</snippet>

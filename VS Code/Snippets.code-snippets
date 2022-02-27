@@ -1,0 +1,306 @@
+{
+	"user_snippet card": {
+	"prefix": "user_snippet card",
+	"body": [
+	  "<div class=\"card border-dark\">",
+	  "<div class=\"card-header\" align=\"center\">Heading</div>",
+	  "<div class=\"card-body\">",
+	  "",
+	  "</div>",
+	  "<div class=\"card-footer\">",
+	  "</div>",
+	  "</div>"
+	],
+	"description": ""
+  },
+
+  "user_snippet checkBox": {
+	"prefix": "user_snippet checkBox",
+	"body": [
+	  "<input type=\"checkbox\" id=\"checkBox\" name=\"checkBox\" required/><label for=\"checkBox\">&nbsp;checkBox</label>"
+	],
+	"description": ""
+  },
+
+  "user_snippet date": {
+	"prefix": "user_snippet date",
+	"body": [
+	  "<input type=\"date\" class=\"form-control\" id=\"date\" name=\"date\" placeholder=\"date\" required/>"
+	],
+	"description": ""
+  },
+
+  "user_snippet deleteButton": {
+	"prefix": "user_snippet deleteButton",
+	"body": [
+	  "<button class=\"btn bg-danger text-white\">Delete</button>"
+	],
+	"description": ""
+  },
+
+  "user_snippet emailIn": {
+	"prefix": "user_snippet emailIn",
+	"body": [
+	  "<input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" placeholder=\"email\" required/>"
+	],
+	"description": ""
+  },
+
+  "user_snippet fileInput": {
+	"prefix": "user_snippet fileInput",
+	"body": [
+	  "<input type=\"file\" class=\"form-control\" id=\"fileUpload\" name=\"fileUpload\" required/>"
+	],
+	"description": ""
+  },
+
+  "user_snippet grid": {
+	"prefix": "user_snippet grid",
+	"body": [
+	  "<div class=\"row\" style=\"margin:1%\">",
+	  "<div class=\"col-lg-6\">Cell</div>",
+	  "<div class=\"col-lg-6\">Cell</div>",
+	  "</div>"
+	],
+	"description": ""
+  },
+
+  "user_snippet modal": {
+	"prefix": "user_snippet modal",
+	"body": [
+	  "<button data-target=\"#modalId\" data-toggle=\"modal\">Button</button>",
+	  "<div class=\"modal fade\" id=\"modalId\" role=\"dialog\">",
+	  "    <div class=\"modal-dialog modal-lg\">",
+	  "      <div class=\"modal-content card border-warning\">",
+	  "        <div class=\"modal-header card-header\" align=\"center\">Modal Heading<button type=\"button\" class=\"close btn btn-danger\" data-dismiss=\"modal\">&times;</button><h4 class=\"modal-title\"></h4></div>",
+	  "        <div class=\"modal-body\" align=\"center\">",
+	  "          <div class=\"row\">",
+	  "              <div class=\"col-lg-12\">",
+	  "                <div class=\"card border-dark\">",
+	  "                <div class=\"card-body\">",
+	  "                </div>",
+	  "              </div>",
+	  "            </div>",
+	  "          </div>",
+	  "        </div>",
+	  "        <div class=\"modal-footer\"></div>",
+	  "      </div>",
+	  "    </div>",
+	  "  </div>"
+	],
+	"description": ""
+  },
+
+  "user_snippet numberInput": {
+	"prefix": "user_snippet numberInput",
+	"body": [
+	  "<input type=\"number\" class=\"form-control\" id=\"number\" name=\"number\" placeholder=\"number\" required/>"
+	],
+	"description": ""
+  },
+
+  "user_snippet passwordInput": {
+	"prefix": "user_snippet passwordInput",
+	"body": [
+	  "<input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" placeholder=\"password\" required/>"
+	],
+	"description": ""
+  },
+
+  "user_snippet radioButtonPair": {
+	"prefix": "user_snippet radioButtonPair",
+	"body": [
+	  "<input type=\"radio\" value=\"radioButtonYes\" id=\"radioButtonYes\" name=\"radioButton\" required/>&nbsp;<label for=\"\">&nbsp;Yes</label>&nbsp;&nbsp;",
+	  "<input type=\"radio\" value=\"radioButtonNo\" id=\"radioButtonNo\" name=\"radioButton\" required/>&nbsp;<label for=\"\">&nbsp;No</label>"
+	],
+	"description": ""
+  },
+
+  "user_snippet select": {
+	"prefix": "user_snippet select",
+	"body": [
+	  "<select class=\"form-control\" id=\"select\" name=\"select\">",
+	  "<option value=\"\">Select</option>",
+	  "</select>"
+	],
+	"description": ""
+  },
+
+  "user_snippet table": {
+	"prefix": "user_snippet table",
+	"body": [
+	  "<table class=\"table table-borderd\">",
+	  "<thead><tr><th class=\"text-center\">Cell</th><th class=\"text-center\">Cell</th></tr></thead>",
+	  "<tbody><tr><td align=\"center\">Cell</td><td align=\"center\">Cell</td></tr></tbody>",
+	  "<tfoot><tr><td align=\"center\">Cell</td><td align=\"center\">Cell</td></tr></tfoot>",
+	  "</table>"
+	],
+	"description": ""
+  },
+
+  "user_snippet timeInput": {
+	"prefix": "user_snippet timeInput",
+	"body": [
+	  "<input type=\"time\" class=\"form-control\" id=\"time\" name=\"time\" placeholder=\"time\" required/>"
+	],
+	"description": ""
+  },
+
+  "user_snippet xmlGet": {
+	"prefix": "user_snippet xmlGet",
+	"body": [
+	  "        var innerThis=this;",
+	  "        var xhttp = new XMLHttpRequest();",
+	  "        xhttp.onreadystatechange = function() {",
+	  "        if (this.readyState == 4 && this.status == 200) {",
+	  "        var data=JSON.parse(xhttp.responseText);",
+	  "        data.forEach(function(item){",
+	  "        innerThis.headings.push({\"headingid\":item.headingid,\"headingtext\":item.headingText});",
+	  "        innerThis.questionText=item.questionText;",
+	  "        });",
+	  "        }",
+	  "        };",
+	  "        xhttp.open(\"GET\", \"<?php echo base_url('index.php/heading/getHeadingsForQuestion?questionID='.['questionID']); ?>\", true);",
+	  "        xhttp.send();",
+	  "        "
+	],
+	"description": ""
+  },
+
+  "user_snippet textArea": {
+	"prefix": "user_snippet textArea",
+	"body": [
+	  "<textarea id=\"textarea\" name=\"textarea\" class=\"form-control\" required></textarea>"
+	],
+	"description": ""
+  },
+
+  "user_snippet textAInput": {
+	"prefix": "user_snippet textAInput",
+	"body": [
+	  "<input type=\"text\" class=\"form-control\" id=\"input\" name=\"input\" placeholder=\"input\" required/>"
+	],
+	"description": ""
+  },
+  "user_snippet LoginForm": {
+	"prefix": "user_snippet LoginForm",
+	"body": [
+	  "        <div class=\"card border-dark\">",
+	  "            <form method=\"POST\" action=\"\" id=\"loginFormID\">",
+	  "                <div class=\"card-header bg-info\" align=\"center\"><strong>Login here</strong></div>",
+	  "                ",
+	  "                <div class=\"card-body\">",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-12\">",
+	  "                            <input type=\"text\" class=\"form-control\" id=\"username\" name=\"username\" required placeholder=\"User Name\"/>",
+	  "                        </div>",
+	  "                    </div>",
+	  "",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-12\">",
+	  "                            <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required placeholder=\"password\"/>",
+	  "                        </div> ",
+	  "                    </div>",
+	  "                </div>",
+	  "",
+	  "                <div class=\"card-footer bg-info text-white\">",
+	  "                    <div class=\"row\">",
+	  "                        <div class=\"col-lg-6\" align=\"center\">",
+	  "                            <button type=\"submit\" id=\"submitButton\" class=\"btn btn-success form-control border-dark \">Login</button>",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-6\" align=\"center\">",
+	  "                            <button type=\"reset\" id=\"submitButton\" class=\"btn btn-danger form-control border-dark\">Reset</button>",
+	  "                        </div>",
+	  "                    </div>",
+	  "                </div>",
+	  "            </form>",
+	  "        </div>"
+	],
+	"description": "user_snippet LoginForm"
+  },
+
+  "user_snippet SignUpForm": {
+	"prefix": "user_snippet SignUpForm",
+	"body": [
+	  "<div class=\"card border-dark\">",
+	  "            <form method=\"POST\" action=\"\" id=\"loginFormID\">",
+	  "                <div class=\"card-header bg-info\" align=\"center\">SignUp Here</div>",
+	  "                ",
+	  "                <div class=\"card-body\">",
+	  "                    <!-- Full Name -->",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-2\">",
+	  "                            Full Name",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-10\">",
+	  "                            <input type=\"text\" class=\"form-control\" id=\"fullname\" name=\"fullname\" required/>",
+	  "                        </div>",
+	  "                    </div>",
+	  "                    <!-- Email -->",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-2\">",
+	  "                            Email",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-10\">",
+	  "                            <input type=\"email\" class=\"form-control\" id=\"email\" name=\"email\" required/>",
+	  "                        </div>",
+	  "                    </div>",
+	  "                    <!-- Password -->",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-2\">",
+	  "                            Password",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-10\">",
+	  "                            <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\" required/>",
+	  "                        </div> ",
+	  "                    </div>",
+	  "                    <!-- Confirm Password -->",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-2\">",
+	  "                            Confirm Password",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-10\">",
+	  "                            <input type=\"password\" class=\"form-control\" id=\"confirmpassword\" name=\"confirmpassword\" required />",
+	  "                        </div> ",
+	  "                    </div>",
+	  "                    <!-- Date of Birth -->",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-2\">",
+	  "                            Date of Birth",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-10\">",
+	  "                            <input type=\"Date\" class=\"form-control\" id=\"confirmpassword\" name=\"confirmpassword\" required/>",
+	  "                        </div> ",
+	  "                    </div>",
+	  "                    <!-- Gender -->",
+	  "                    <div class=\"row\" style=\"margin:1%\">",
+	  "                        <div class=\"col-lg-2\">",
+	  "                            Gender",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-10\">",
+	  "                           <select class=\"form-control\" id=\"select\" name=\"gender\">",
+	  "                                <option value=\"Male\">Male</option>",
+	  "                                <option value=\"Female\">Female</option>",
+	  "                                <option value=\"Other\">Other</option>",
+	  "                           </select>",
+	  "                        </div> ",
+	  "                    </div>",
+	  "                </div>",
+	  "",
+	  "                <div class=\"card-footer bg-info text-white\">",
+	  "                    <div class=\"row\">",
+	  "                        <div class=\"col-lg-6\" align=\"center\">",
+	  "                            <button type=\"submit\" id=\"signupButton\" class=\"btn btn-success form-control border-dark \">Signup</button>",
+	  "                        </div>",
+	  "                        <div class=\"col-lg-6\" align=\"center\">",
+	  "                            <button type=\"reset\" class=\"btn btn-danger form-control border-dark\">Reset</button>",
+	  "                        </div>",
+	  "                    </div>",
+	  "                </div>",
+	  "            </form>",
+	  "        </div>"
+	],
+	"description": "user_snippet SignUpForm"
+  },
+
+}

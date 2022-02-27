@@ -1,0 +1,21 @@
+{
+	"Fetch Get Request": {
+		"prefix": "fet-get",
+		"body": [
+		  "fetch(\"URL\",{method:'GET',mode: 'no-cors',cache: 'no-cache'})",
+		  ".then(response => {",
+		  "    if (response.status == 200) {return response.json();}",
+		  "    else {console.log('Backend Error..!');console.log(response.text());}",
+		  "})",
+		  ".then(data => {",
+		  "    if (data.length>0) {",
+		  "        data.forEach(function(item){",
+		  "            ",
+		  "        });",
+		  "    }",
+		  "})",
+		  ".catch(() => {console.log(\"Network connection error\");});"
+		],
+		"description": "Fetch Get Request"
+	  }
+}

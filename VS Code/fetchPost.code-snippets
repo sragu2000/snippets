@@ -1,0 +1,32 @@
+{
+	"Fetch Post": {
+		"prefix": "fet-post",
+		"body": [
+		  "    var toServer=new FormData();",
+		  "    toServer.append('userName',\"blablabla\");",
+		  "    toServer.append('passWord',\"blablabla\");",
+		  "    fetch(\"URL\",{",
+		  "        method:'POST',",
+		  "        body: toServer,",
+		  "        mode: 'no-cors',",
+		  "        cache: 'no-cache'})",
+		  "    .then(response => {",
+		  "        if (response.status == 200) {",
+		  "            return response.json();            ",
+		  "        }",
+		  "        else {",
+		  "            alert('Backend Error..!');",
+		  "            console.log(response.text());",
+		  "        }",
+		  "    })",
+		  "    .then(data => {",
+		  "        alert(data.message); window.location.reload();",
+		  "    })",
+		  "    .catch(() => {",
+		  "        console.log(\"Network connection error\");",
+		  "        alert(\"Reloading\"); window.location.reload();",
+		  "    });"
+		],
+		"description": "Fetch Post"
+	  }
+}

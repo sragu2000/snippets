@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="time" class="form-control" id="time" name="time" placeholder="time" required/>
+]]></content>
+	<tabTrigger>timeInput</tabTrigger>
+</snippet>
