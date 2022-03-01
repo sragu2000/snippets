@@ -1,14 +1,10 @@
-{
-	"": {
-		"prefix": "user_snippet htaccess",
-		"body": [
-		  "RewriteEngine on",
-		  "",
-		  "RewriteCond $1 !^(index\\.php|assets|images|js|css|uploads|favicon.png)",
-		  "RewriteCond %(REQUEST_FILENAME) !-f",
-		  "RewriteCond %(REQUEST_FILENAME) !-d",
-		  "RewriteRule ^(.*)$ ./index.php/ [L]"
-		],
-		"description": ""
-	  }
-}
+{"user_snippet htaccess": {
+	"prefix": "user_snippet htaccess",
+	"body": [
+	  "RewriteEngine On",
+	  "RewriteCond %{REQUEST_FILENAME} !-f",
+	  "RewriteCond %{REQUEST_FILENAME} !-d",
+	  "RewriteRule ^(.*)$ index.php/$1 [L]"
+	],
+	"description": "user_snippet htaccess"
+  }}
