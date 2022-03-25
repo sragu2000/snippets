@@ -1,0 +1,16 @@
+{
+	"user_snippet ci constructor": {
+		"prefix": "ci constructor",
+		"body": [
+		  "public function __construct($config=\"rest\") {",
+		  "	header(\"Access-Control-Allow-Origin: *\");",
+		  "	header(\"Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE\");",
+		  "	header(\"Access-Control-Allow-Headers: Content-Type, Content-Length, Accept-Encoding\");",
+		  "	parent::__construct();",
+		  "	//$this->load->model('Mdl_user');",
+		  "	//$this->load->library('session');",
+		  "}"
+		],
+		"description": "user_snippet ci constructor"
+	  }
+}

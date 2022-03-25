@@ -28,5 +28,35 @@
 		  "    });"
 		],
 		"description": "Fetch Post"
+	  },
+	  "fetch post new": {
+		"prefix": "fetch post new",
+		"body": [
+		  "var toServer=new FormData();",
+		  "toServer.append('email',$(\"#email\").val());",
+		  "toServer.append('password',$(\"#password\").val());",
+		  "fetch(\"URL\",{method:'POST',body: toServer,mode: 'no-cors',cache: 'no-cache'})",
+		  ".then(async response => {",
+		  "    try {",
+		  "        const data = await response.json()",
+		  "        console.log('response data', data);",
+		  "        return data;",
+		  "    }catch(error) {",
+		  "        console.log('Error happened here!')",
+		  "        console.error(error)",
+		  "    }",
+		  "})",
+		  ".then(data => {",
+		  "    alert(data.message);",
+		  "    //window.location.reload();",
+		  "    //window.location.href=\"<?php echo base_url('home') ?>\";",
+		  "})",
+		  ".catch((e) => {",
+		  "    console.log(\"From catch\");",
+		  "    console.log(e);",
+		  "    alert(\"Reloading\");",
+		  "});"
+		],
+		"description": "fetch post new"
 	  }
 }
